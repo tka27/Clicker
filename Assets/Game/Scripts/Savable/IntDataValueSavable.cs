@@ -1,7 +1,6 @@
-using Common;
 using UnityEngine;
 
-namespace Game.Upgrades.Scripts.Savable
+namespace Game.Scripts.Savable
 {
     public class IntDataValueSavable : DataValueSavable<int>
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace Common
+namespace Game.Scripts.Savable
 {
 	public class DataValueSavable<T> where T : IComparable<T>
 	{

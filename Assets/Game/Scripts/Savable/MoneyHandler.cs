@@ -1,6 +1,6 @@
 using System;
 
-namespace Game.Upgrades.Scripts.Savable
+namespace Game.Scripts.Savable
 {
     public static class MoneyHandler
     {

@@ -1,6 +1,5 @@
 using System;
-using Common;
-using Game.Upgrades.Scripts.Savable;
+using Game.Scripts.Savable;
 using Game.Upgrades.Scripts.ScriptableObjects;
 using UnityEngine;
 

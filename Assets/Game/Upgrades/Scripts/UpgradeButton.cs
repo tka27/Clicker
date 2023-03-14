@@ -1,4 +1,4 @@
-﻿using Game.Upgrades.Scripts.Savable;
+﻿using Game.Scripts.Savable;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
