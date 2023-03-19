@@ -580,6 +580,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6386634570523849847}
     m_Modifications:
+    - target: {fileID: 1636705524179002120, guid: 1e92c1e8851ec7f479ba057a44d6c8c4, type: 3}
+      propertyPath: _data
+      value: 
+      objectReference: {fileID: 11400000, guid: 512ef2a45391b724ca2d15324389face, type: 2}
+    - target: {fileID: 3118378518134523687, guid: 1e92c1e8851ec7f479ba057a44d6c8c4, type: 3}
+      propertyPath: m_text
+      value: 1_2_improvement
+      objectReference: {fileID: 0}
+    - target: {fileID: 3648799721355886209, guid: 1e92c1e8851ec7f479ba057a44d6c8c4, type: 3}
+      propertyPath: m_text
+      value: 'Income: +0%'
+      objectReference: {fileID: 0}
     - target: {fileID: 4363640590263816034, guid: 1e92c1e8851ec7f479ba057a44d6c8c4, type: 3}
       propertyPath: m_Name
       value: improveBtn (1)
