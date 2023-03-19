@@ -1,3 +1,4 @@
+using Game.Scripts.Savable;
 using Leopotam.EcsLite;
 
 namespace Game.Scripts.Ecs.Systems
@@ -6,6 +7,7 @@ namespace Game.Scripts.Ecs.Systems
     {
         public void Run(IEcsSystems systems)
         {
+            MoneyHandler.Data.Save();
             var businessFilter = systems.GetWorld().Filter<Business>().Inc<BusinessProgress>().End();
             var businessPool = systems.GetWorld().GetPool<Business>();
             var progressPool = systems.GetWorld().GetPool<BusinessProgress>();

@@ -14,7 +14,6 @@ namespace Game.Scripts.Savable
                 throw new ArgumentOutOfRangeException(null, "ArgumentOutOfRange_BadAddedValue");
 
             Data.Value += addedValue;
-            Data.Save();
             OnValueChanged?.Invoke();
         }
 
@@ -28,7 +27,6 @@ namespace Game.Scripts.Savable
 
             Data.Value -= subtractValue;
             OnValueChanged?.Invoke();
-            Data.Save();
             return true;
         }
     }
