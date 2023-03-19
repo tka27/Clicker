@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Business1
   m_EditorClassIdentifier: 
   <IncomeDelay>k__BackingField: 3
-  <BasePrice>k__BackingField: 3
   <BaseIncome>k__BackingField: 3
   <Upgrade>k__BackingField: {fileID: 11400000, guid: 3be41dbe47d316649a8a83204b6947a3, type: 2}
+  Improvements:
+  - {fileID: 11400000, guid: 5e02080780a0cc649ba325fa78d96938, type: 2}
+  - {fileID: 11400000, guid: 512ef2a45391b724ca2d15324389face, type: 2}

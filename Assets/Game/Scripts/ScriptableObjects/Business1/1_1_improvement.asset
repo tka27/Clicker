@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4963564799f848c0beb9e82e54e36c54, type: 3}
   m_Name: 1_1_improvement
   m_EditorClassIdentifier: 
-  <Price>k__BackingField: 0
-  <IncomeMultiplier>k__BackingField: 0.86
+  <Price>k__BackingField: 50
+  <IncomePercentage>k__BackingField: 0.5

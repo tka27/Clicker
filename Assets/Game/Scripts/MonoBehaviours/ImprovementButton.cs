@@ -20,6 +20,7 @@ namespace Game.Scripts.MonoBehaviours
             if (_data.IsBought) return;
             MoneyHandler.OnValueChanged += SwitchButton;
             _button.onClick.AddListener(_data.BuyImprovement);
+            _button.onClick.AddListener(SwitchButton);
         }
 
         private void OnDestroy()

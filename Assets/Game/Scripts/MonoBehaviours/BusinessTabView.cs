@@ -12,53 +12,64 @@ namespace Game.Scripts.MonoBehaviours
 
         [field: SerializeField] public BusinessData BusinessData { get; private set; }
 
+        private readonly StringBuilder _builder = new();
+
         private void Start()
         {
             UpdateText();
             BusinessData.Upgrade.OnUpgradeEvent += UpdateText;
+
+            foreach (var improvement in BusinessData.Improvements)
+            {
+                if (improvement.IsBought) continue;
+                improvement.OnBuyEvent += IncomeTextUpdate;
+            }
         }
 
         private void OnDestroy()
         {
             BusinessData.Upgrade.OnUpgradeEvent -= UpdateText;
+            foreach (var improvement in BusinessData.Improvements)
+            {
+                improvement.OnBuyEvent -= IncomeTextUpdate;
+            }
         }
 
         private void UpdateText()
         {
-            StringBuilder builder = new();
-            LevelTextUpdate(builder);
-            IncomeTextUpdate(builder);
-            PriceTextUpdate(builder);
+            LevelTextUpdate();
+            IncomeTextUpdate();
+            PriceTextUpdate();
         }
 
-        private void LevelTextUpdate(in StringBuilder builder)
+        private void LevelTextUpdate()
         {
-            builder.Append("LVL");
-            builder.Append("\n");
-            builder.Append(BusinessData.Upgrade.CurrentLvl);
-            _lvl.text = builder.ToString();
-            builder.Clear();
+            _builder.Append("LVL");
+            _builder.Append("\n");
+            _builder.Append(BusinessData.Upgrade.CurrentLvl);
+            _lvl.text = _builder.ToString();
+            _builder.Clear();
         }
 
-        private void IncomeTextUpdate(in StringBuilder builder)
+        private void IncomeTextUpdate()
         {
-            builder.Append("Income");
-            builder.Append("\n");
-            builder.Append(BusinessData.CurrentIncome);
-            builder.Append("$");
-            _income.text = builder.ToString();
-            builder.Clear();
+            _builder.Append("Income");
+            _builder.Append("\n");
+            _builder.Append(BusinessData.CurrentIncome);
+            _builder.Append("$");
+            _income.text = _builder.ToString();
+            _builder.Clear();
         }
 
-        private void PriceTextUpdate(in StringBuilder builder)
+        private void PriceTextUpdate()
         {
-            builder.Append("LEVEL UP");
-            builder.Append("\n");
-            builder.Append("Price: ");
-            builder.Append(BusinessData.Upgrade.NextLvlPrice);
-            builder.Append("$");
-            _price.text = builder.ToString();
-            builder.Clear();
+            _builder.Append("LEVEL UP");
+            _builder.Append("\n");
+            _builder.Append("Price: ");
+            _builder.Append(BusinessData.Upgrade.NextLvlPrice);
+            _builder.Append("$");
+            _price.text = _builder.ToString();
+            _builder.Clear();
         }
     }
 }
