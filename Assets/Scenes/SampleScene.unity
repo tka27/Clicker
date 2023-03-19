@@ -968,6 +968,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 22974443}
     m_Modifications:
+    - target: {fileID: 3754902851901270718, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
+      propertyPath: _data
+      value: 
+      objectReference: {fileID: 11400000, guid: 3be41dbe47d316649a8a83204b6947a3, type: 2}
     - target: {fileID: 6386634570523849844, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
       propertyPath: m_Name
       value: BuisnessBG
@@ -1052,5 +1056,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7830338077305691406, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2314563601049258089, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}

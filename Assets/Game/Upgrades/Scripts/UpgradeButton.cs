@@ -1,5 +1,5 @@
 ﻿using Game.Scripts.Savable;
-using TMPro;
+using Game.Upgrades.Scripts.ScriptableObjects;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,58 +7,29 @@ namespace Game.Upgrades.Scripts
 {
     public sealed class UpgradeButton : MonoBehaviour
     {
-        [SerializeField] private UpgradeSource _source;
-        [SerializeField] private TextMeshProUGUI _priceText;
+        [SerializeField] private UpgradeData _data;
         [SerializeField] private Button _button;
-
-        [Header("Levels Display"), SerializeField]
-        private TextMeshProUGUI _lvlText;
-
-        public Button Button => _button;
-
-        public void DisableBtn()
-        {
-            _button.interactable = false;
-        }
-
-        private void UpdateDisplay()
-        {
-            _priceText.text = !_source.HasNextLvl ? "MAX" : _source.Values.NextLvlPrice(_source.CurrentLvl).ToString();
-            if (_lvlText) _lvlText.text = $"LVL {_source.CurrentLvl + 1}";
-        }
 
 
         private void SwitchBtn()
         {
             if (!enabled) return;
-            _button.interactable = _source.AbleToUp;
-
-            UpdateDisplay();
+            _button.interactable = _data.AbleToUp;
         }
-
-        private void LvlUp()
-        {
-            if (!MoneyHandler.TrySubtractMoney(_source.Values.NextLvlPrice(_source.CurrentLvl))) return;
-            _source.LvlUp();
-        }
-
 
         private void OnEnable()
         {
             MoneyHandler.OnValueChanged += SwitchBtn;
-            _button.onClick.AddListener(LvlUp);
-            _source.OnUpgrade += UpdateDisplay;
-            _source.OnUpgrade += SwitchBtn;
+            _button.onClick.AddListener(_data.LvlUp);
+            _data.OnUpgradeEvent += SwitchBtn;
             SwitchBtn();
-            UpdateDisplay();
         }
 
         private void OnDisable()
         {
             MoneyHandler.OnValueChanged -= SwitchBtn;
-            _button.onClick.RemoveListener(LvlUp);
-            _source.OnUpgrade -= UpdateDisplay;
-            _source.OnUpgrade -= SwitchBtn;
+            _button.onClick.RemoveListener(_data.LvlUp);
+            _data.OnUpgradeEvent -= SwitchBtn;
         }
     }
 }

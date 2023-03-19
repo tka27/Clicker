@@ -23,5 +23,12 @@ namespace Game.Scripts.MonoBehaviours
         {
             _moneyText.text = $"{MoneyHandler.Data.Value}$";
         }
+
+#if UNITY_EDITOR
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.A)) MoneyHandler.AddMoney(1000);
+        }
+#endif
     }
 }

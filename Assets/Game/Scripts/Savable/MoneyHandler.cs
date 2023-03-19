@@ -6,28 +6,29 @@ namespace Game.Scripts.Savable
     {
         public static event Action OnValueChanged;
 
-        private static IntDataValueSavable _data = new("MoneyDataKey");
-        public static IntDataValueSavable Data => _data;
+        public static IntDataValueSavable Data { get; } = new("money_data_key");
 
         public static void AddMoney(int addedValue)
         {
             if (addedValue < 0)
                 throw new ArgumentOutOfRangeException(null, "ArgumentOutOfRange_BadAddedValue");
 
-            _data.Value += addedValue;
+            Data.Value += addedValue;
+            Data.Save();
             OnValueChanged?.Invoke();
         }
 
         public static bool TrySubtractMoney(int subtractValue)
         {
-            if (subtractValue > 0)
+            if (subtractValue < 0)
                 throw new ArgumentOutOfRangeException(null, "ArgumentOutOfRange_BadSubtractedValue");
 
-            if (_data.Value - subtractValue < 0) return false;
+            if (Data.Value - subtractValue < 0) return false;
 
 
-            _data.Value -= subtractValue;
+            Data.Value -= subtractValue;
             OnValueChanged?.Invoke();
+            Data.Save();
             return true;
         }
     }

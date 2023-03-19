@@ -1,4 +1,5 @@
 using Game.Scripts.Savable;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Game.Scripts
@@ -8,8 +9,9 @@ namespace Game.Scripts
     {
         private BoolDataValueSavable _saveData;
         [field: SerializeField, Min(0)] public int Price { get; private set; }
-        [field: SerializeField, Min(0)] public float IncomeMultiplier { get; private set; }
+        [field: SerializeField, Min(0)] public float IncomePercentage { get; private set; }
         public bool IsBought => SaveData.Value;
+        public float IncomeMultiplier => !IsBought ? 0 : IncomePercentage + 1;
 
         public void BuyImprovement()
         {
@@ -19,9 +21,9 @@ namespace Game.Scripts
 
         private BoolDataValueSavable SaveData => _saveData ??= new(name);
 
-        private void OnDestroy()
+        private void OnDisable()
         {
-            _saveData.Save();
+            _saveData?.Save();
         }
     }
 }

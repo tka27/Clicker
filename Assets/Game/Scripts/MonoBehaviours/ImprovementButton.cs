@@ -43,7 +43,7 @@ namespace Game.Scripts.MonoBehaviours
         private void OnValidate()
         {
             _name.text = _data.name;
-            _income.text = $"Income: +{_data.IncomeMultiplier:P0}";
+            _income.text = $"Income: +{_data.IncomePercentage:P0}";
             _price.text = $"Price: {_data.Price}$";
         }
     }
