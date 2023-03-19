@@ -11,6 +11,7 @@ namespace Game.Scripts.Ecs
         //статический мир мне необходим для доступа вне ecs.
         //внутри ecs я его использую потому что у меня уже есть к нему доступ, иначе я бы его получал из систем или инжекта
         private IEcsSystems _systems;
+        private IEcsSystems _saveSystems;
 
         private void Awake()
         {
@@ -20,6 +21,10 @@ namespace Game.Scripts.Ecs
                 .Add(new ProgressSystem())
                 .Add(new ProgressViewSystem())
                 .Add(new RewardSystem())
+                .Init();
+
+            _saveSystems = new EcsSystems(World);
+            _saveSystems
                 .Add(new SaveSystem())
                 .Init();
         }
@@ -30,19 +35,29 @@ namespace Game.Scripts.Ecs
             _systems?.Run();
         }
 
+#if UNITY_EDITOR
+        private void OnApplicationQuit()
+        {
+            _saveSystems.Run();
+        }
+
+#else
+        private void OnApplicationPause(bool pauseStatus)
+        {
+            _saveSystems.Run();
+        }
+#endif
+
         private void OnDestroy()
         {
-            if (_systems != null)
-            {
-                _systems.Destroy();
-                _systems = null;
-            }
+            _systems?.Destroy();
+            _systems = null;
 
-            if (World != null)
-            {
-                World.Destroy();
-                World = null;
-            }
+            _saveSystems?.Destroy();
+            _saveSystems = null;
+
+            World?.Destroy();
+            World = null;
         }
     }
 }

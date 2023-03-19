@@ -2,9 +2,9 @@ using Leopotam.EcsLite;
 
 namespace Game.Scripts.Ecs.Systems
 {
-    public class SaveSystem : IEcsDestroySystem
+    public class SaveSystem : IEcsRunSystem
     {
-        public void Destroy(IEcsSystems systems)
+        public void Run(IEcsSystems systems)
         {
             var businessFilter = systems.GetWorld().Filter<Business>().Inc<BusinessProgress>().End();
             var businessPool = systems.GetWorld().GetPool<Business>();
