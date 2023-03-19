@@ -1,4 +1,5 @@
 using Game.Scripts.Ecs;
+using Game.Scripts.ScriptableObjects;
 using UnityEngine;
 using UnityEngine.UI;
 

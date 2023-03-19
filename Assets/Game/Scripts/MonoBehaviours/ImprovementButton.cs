@@ -1,4 +1,5 @@
 using Game.Scripts.Savable;
+using Game.Scripts.ScriptableObjects;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;

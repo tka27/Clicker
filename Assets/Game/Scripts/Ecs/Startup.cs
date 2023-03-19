@@ -12,17 +12,18 @@ namespace Game.Scripts.Ecs
         //внутри ecs я его использую потому что у меня уже есть к нему доступ, иначе я бы его получал из систем или инжекта
         private IEcsSystems _systems;
 
-
-        public void Start()
+        private void Awake()
         {
             World = new EcsWorld();
             _systems = new EcsSystems(World);
             _systems
                 .Add(new ProgressSystem())
                 .Add(new ProgressViewSystem())
-                .Add(new RewardSystem()) //
+                .Add(new RewardSystem())
+                .Add(new SaveSystem())
                 .Init();
         }
+
 
         public void Update()
         {

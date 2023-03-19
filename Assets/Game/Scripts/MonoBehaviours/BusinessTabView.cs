@@ -1,4 +1,6 @@
+using System;
 using System.Text;
+using Game.Scripts.ScriptableObjects;
 using TMPro;
 using UnityEngine;
 
@@ -6,6 +8,7 @@ namespace Game.Scripts.MonoBehaviours
 {
     public class BusinessTabView : MonoBehaviour
     {
+        [SerializeField] private TextMeshProUGUI _name;
         [SerializeField] private TextMeshProUGUI _lvl;
         [SerializeField] private TextMeshProUGUI _income;
         [SerializeField] private TextMeshProUGUI _price;
@@ -70,6 +73,11 @@ namespace Game.Scripts.MonoBehaviours
             _builder.Append("$");
             _price.text = _builder.ToString();
             _builder.Clear();
+        }
+
+        private void OnValidate()
+        {
+            _name.text = BusinessData.name;
         }
     }
 }
