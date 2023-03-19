@@ -300,6 +300,7 @@ GameObject:
   - component: {fileID: 6386634570523849841}
   - component: {fileID: 6386634570523849846}
   - component: {fileID: 2117068081767467838}
+  - component: {fileID: 1539736501484855722}
   m_Layer: 5
   m_Name: BuisnessBG
   m_TagString: Untagged
@@ -386,6 +387,21 @@ MonoBehaviour:
   _income: {fileID: 4559199014250939587}
   _price: {fileID: 6863086319777184348}
   <BusinessData>k__BackingField: {fileID: 11400000, guid: 89429d34662f31040aad04cad2f47a71, type: 2}
+--- !u!114 &1539736501484855722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6386634570523849844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34d6406016e44c9dba725cd991ca44fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _progressSaveKey: 
+  <BusinessData>k__BackingField: {fileID: 11400000, guid: 89429d34662f31040aad04cad2f47a71, type: 2}
+  <ProgressBar>k__BackingField: {fileID: 671449206575914486}
 --- !u!1001 &5774794506304213612
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -634,9 +650,13 @@ PrefabInstance:
       propertyPath: m_text
       value: 1_2_improvement
       objectReference: {fileID: 0}
+    - target: {fileID: 3253555074130456509, guid: 1e92c1e8851ec7f479ba057a44d6c8c4, type: 3}
+      propertyPath: m_text
+      value: 'Price: 400$'
+      objectReference: {fileID: 0}
     - target: {fileID: 3648799721355886209, guid: 1e92c1e8851ec7f479ba057a44d6c8c4, type: 3}
       propertyPath: m_text
-      value: 'Income: +0%'
+      value: 'Income: +100%'
       objectReference: {fileID: 0}
     - target: {fileID: 4363640590263816034, guid: 1e92c1e8851ec7f479ba057a44d6c8c4, type: 3}
       propertyPath: m_Name

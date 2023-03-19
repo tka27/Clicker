@@ -21,7 +21,7 @@ namespace Game.Scripts.MonoBehaviours
 
         private void UpdateText()
         {
-            _moneyText.text = $"{MoneyHandler.Data.Value}$";
+            _moneyText.text = $"{MoneyHandler.Data.Value:F1}$";
         }
 
 #if UNITY_EDITOR

@@ -1,13 +1,15 @@
+using Game.Scripts.Ecs.Systems;
 using Leopotam.EcsLite;
-using Leopotam.EcsLite.Di;
 using UnityEngine;
 
 namespace Game.Scripts.Ecs
 {
     public class Startup : MonoBehaviour
     {
-        [SerializeField] private SceneData _sceneData;
         public static EcsWorld World { get; private set; }
+
+        //статический мир мне необходим для доступа вне ecs.
+        //внутри ecs я его использую потому что у меня уже есть к нему доступ, иначе я бы его получал из систем или инжекта
         private IEcsSystems _systems;
 
 
@@ -16,7 +18,9 @@ namespace Game.Scripts.Ecs
             World = new EcsWorld();
             _systems = new EcsSystems(World);
             _systems
-                .Inject(_sceneData)
+                .Add(new ProgressSystem())
+                .Add(new ProgressViewSystem())
+                .Add(new RewardSystem()) //
                 .Init();
         }
 
