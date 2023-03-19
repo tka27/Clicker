@@ -514,6 +514,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 22974443}
     m_Modifications:
+    - target: {fileID: 517898460611518765, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
+      propertyPath: m_text
+      value: Business2
+      objectReference: {fileID: 0}
     - target: {fileID: 1539736501484855722, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
       propertyPath: <BusinessData>k__BackingField
       value: 
@@ -530,6 +534,18 @@ PrefabInstance:
       propertyPath: _data
       value: 
       objectReference: {fileID: 11400000, guid: e7795fff8eecbb44ea650e049739bb5c, type: 2}
+    - target: {fileID: 5461022133226825705, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
+      propertyPath: m_text
+      value: 2_2_improvement
+      objectReference: {fileID: 0}
+    - target: {fileID: 5596062379846586227, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
+      propertyPath: m_text
+      value: 'Price: 4000$'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5921356153114058319, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
+      propertyPath: m_text
+      value: 'Income: +200%'
+      objectReference: {fileID: 0}
     - target: {fileID: 6386634570523849844, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
       propertyPath: m_Name
       value: BuisnessBG (1)
@@ -614,6 +630,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7099666437800062189, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
+      propertyPath: m_text
+      value: 'Income: +100%'
+      objectReference: {fileID: 0}
     - target: {fileID: 7830338077305691406, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -622,6 +642,14 @@ PrefabInstance:
       propertyPath: _data
       value: 
       objectReference: {fileID: 11400000, guid: 18428537252fc2b4c8ee3518b7da84b5, type: 2}
+    - target: {fileID: 8890815658355184971, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
+      propertyPath: m_text
+      value: 2_1_improvement
+      objectReference: {fileID: 0}
+    - target: {fileID: 9007975629363412433, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
+      propertyPath: m_text
+      value: 'Price: 1200$'
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2314563601049258089, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
@@ -728,6 +756,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 22974443}
     m_Modifications:
+    - target: {fileID: 517898460611518765, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
+      propertyPath: m_text
+      value: Business5
+      objectReference: {fileID: 0}
     - target: {fileID: 1539736501484855722, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
       propertyPath: <BusinessData>k__BackingField
       value: 
@@ -746,15 +778,15 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: f8ca814294c169f4991fb58c0cb86a8b, type: 2}
     - target: {fileID: 5461022133226825705, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
       propertyPath: m_text
-      value: 1_2_improvement
+      value: 5_2_improvement
       objectReference: {fileID: 0}
     - target: {fileID: 5596062379846586227, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
       propertyPath: m_text
-      value: 'Price: 400$'
+      value: 'Price: 500000$'
       objectReference: {fileID: 0}
     - target: {fileID: 5921356153114058319, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
       propertyPath: m_text
-      value: 'Income: +100%'
+      value: 'Income: +400%'
       objectReference: {fileID: 0}
     - target: {fileID: 6386634570523849844, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
       propertyPath: m_Name
@@ -1160,6 +1192,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 22974443}
     m_Modifications:
+    - target: {fileID: 517898460611518765, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
+      propertyPath: m_text
+      value: Business3
+      objectReference: {fileID: 0}
     - target: {fileID: 1539736501484855722, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
       propertyPath: <BusinessData>k__BackingField
       value: 
@@ -1176,6 +1212,18 @@ PrefabInstance:
       propertyPath: _data
       value: 
       objectReference: {fileID: 11400000, guid: 150ba5f6f05d45245984f0854f3c1e30, type: 2}
+    - target: {fileID: 5461022133226825705, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
+      propertyPath: m_text
+      value: 3_2_improvement
+      objectReference: {fileID: 0}
+    - target: {fileID: 5596062379846586227, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
+      propertyPath: m_text
+      value: 'Price: 20000$'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5921356153114058319, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
+      propertyPath: m_text
+      value: 'Income: +150%'
+      objectReference: {fileID: 0}
     - target: {fileID: 6386634570523849844, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
       propertyPath: m_Name
       value: BuisnessBG (2)
@@ -1260,6 +1308,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7099666437800062189, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
+      propertyPath: m_text
+      value: 'Income: +100%'
+      objectReference: {fileID: 0}
     - target: {fileID: 7830338077305691406, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -1268,6 +1320,14 @@ PrefabInstance:
       propertyPath: _data
       value: 
       objectReference: {fileID: 11400000, guid: 95fc8f760f0ed4248967352658afec34, type: 2}
+    - target: {fileID: 8890815658355184971, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
+      propertyPath: m_text
+      value: 3_1_improvement
+      objectReference: {fileID: 0}
+    - target: {fileID: 9007975629363412433, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
+      propertyPath: m_text
+      value: 'Price: 6000$'
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2314563601049258089, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
@@ -1351,6 +1411,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 22974443}
     m_Modifications:
+    - target: {fileID: 517898460611518765, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
+      propertyPath: m_text
+      value: Business4
+      objectReference: {fileID: 0}
     - target: {fileID: 1539736501484855722, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
       propertyPath: <BusinessData>k__BackingField
       value: 
@@ -1367,6 +1431,18 @@ PrefabInstance:
       propertyPath: _data
       value: 
       objectReference: {fileID: 11400000, guid: 8b050b111b2d8ec4d91cc0b1678edd94, type: 2}
+    - target: {fileID: 5461022133226825705, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
+      propertyPath: m_text
+      value: 4_2_improvement
+      objectReference: {fileID: 0}
+    - target: {fileID: 5596062379846586227, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
+      propertyPath: m_text
+      value: 'Price: 50000$'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5921356153114058319, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
+      propertyPath: m_text
+      value: 'Income: +200%'
+      objectReference: {fileID: 0}
     - target: {fileID: 6386634570523849844, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
       propertyPath: m_Name
       value: BuisnessBG (3)
@@ -1451,6 +1527,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7099666437800062189, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
+      propertyPath: m_text
+      value: 'Income: +100%'
+      objectReference: {fileID: 0}
     - target: {fileID: 7830338077305691406, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -1459,6 +1539,14 @@ PrefabInstance:
       propertyPath: _data
       value: 
       objectReference: {fileID: 11400000, guid: 057d25e07dc2fb543bcc56f85d7f8889, type: 2}
+    - target: {fileID: 8890815658355184971, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
+      propertyPath: m_text
+      value: 4_1_improvement
+      objectReference: {fileID: 0}
+    - target: {fileID: 9007975629363412433, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
+      propertyPath: m_text
+      value: 'Price: 15000$'
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2314563601049258089, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
@@ -1474,6 +1562,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 22974443}
     m_Modifications:
+    - target: {fileID: 2253260495651360759, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2253260495651360759, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2253260495651360759, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2253260495651360759, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2253260495651360759, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3754902851901270718, guid: c6e3e05743c2ecf4dbc5837f834c0123, type: 3}
       propertyPath: _data
       value: 
