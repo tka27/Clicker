@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 141df67c06b657a47bde0062c53eada6, type: 3}
   m_Name: 1Upgrade
   m_EditorClassIdentifier: 
+  _minimumLevel: 1
   _defaultPrice: 3

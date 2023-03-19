@@ -8,10 +8,24 @@ namespace Game.Scripts.ScriptableObjects
     public class UpgradeData : SavableScriptableObject
     {
         public event Action OnUpgradeEvent;
+        [SerializeField, Min(0)] private int _minimumLevel;
+
         [SerializeField, Min(0)] private int _defaultPrice;
 
         private IntDataValueSavable _saveData;
-        private IntDataValueSavable SaveData => _saveData ??= new(name);
+
+        private IntDataValueSavable SaveData
+        {
+            get
+            {
+                if (_saveData != null) return _saveData;
+
+                _saveData = new(name);
+                if (_saveData.Value < _minimumLevel) _saveData.Value = _minimumLevel;
+
+                return _saveData;
+            }
+        }
 
         public int CurrentLvl => SaveData.Value;
         public bool AbleToUp => MoneyHandler.Data.Value >= NextLvlPrice;
